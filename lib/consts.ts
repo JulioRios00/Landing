@@ -1,4 +1,3 @@
-import { Guitar } from "lucide-react";
 
 interface CoolStuffItem {
 	text: string;

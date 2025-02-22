@@ -1,4 +1,3 @@
-import { COOL_STUFF } from "@/lib/consts";
 import CoolStuffDialog from "./CoolStuffDialog";
 
 export default function CoolStuff() {

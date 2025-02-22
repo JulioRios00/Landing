@@ -4,8 +4,6 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/ThemeProvider"
 
-const inter = Inter({ subsets: ["latin"] })
-
 export const metadata: Metadata = {
   title: "Julio Rios, nice to meet you!",
   description: "Fullstack Developer Portfolio",
