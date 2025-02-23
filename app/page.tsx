@@ -55,7 +55,7 @@ export default function PortfolioPage() {
             </CardContent>
           </Card>
           <Card className="h-full">
-            <CardHeader className="text-center pb-16">
+            <CardHeader className="text-center pb-10">
               <CardTitle>Contact</CardTitle>
             </CardHeader>
             <CardContent>

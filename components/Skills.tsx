@@ -14,10 +14,14 @@ import { SKILLS } from "@/lib/consts";
 
 export default function Skills() {
   return (
-    <ResponsiveContainer width="100%" height={340} >
+    <ResponsiveContainer width="100%" height={340}>
       <RadarChart cx="50%" cy="50%" outerRadius="65%" data={SKILLS}>
-        <PolarGrid gridType="circle" />
+        <PolarGrid
+          gridType="circle"
+          className="text-slate-800 dark:text-white"
+        />
         <PolarAngleAxis
+          className="text-slate-800 dark:text-white"
           dataKey="subject"
           tick={({ payload, x, y, textAnchor }) => (
             <text
@@ -25,7 +29,7 @@ export default function Skills() {
               y={y}
               textAnchor={textAnchor}
               fontSize={14}
-              fill="#fff"
+              fill="currentColor"
               dy={y < 120 ? -5 : y > 280 ? 15 : 5}
             >
               {payload.value}

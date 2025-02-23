@@ -97,7 +97,7 @@ export const COOL_STUFF: CoolStuffItem[] = [
 	type: "image"
   },
   {
-    text: "Ireland was the most incredible place I have lived in my entire life and I am looking forward to finding an opportunity to live out the rest of my days there!",
+    text: "Ireland was the most incredible place I have lived in my entire life and I'm looking forward to finding an opportunity to live out the rest of my days there!",
     link: "/ireland.jpg",
 	type: "image"
   }
