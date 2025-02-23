@@ -1,7 +1,6 @@
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -12,23 +11,27 @@ import Image from "next/image";
 export default function CoolStuffDialog() {
   const renderMedia = (item: (typeof COOL_STUFF)[0]) => {
     if (item.type === "video") {
+      const videoId = item.link.split("/d/")[1].split("/view")[0];
+      const embedUrl = `https://drive.google.com/file/d/${videoId}/preview`;
+
       return (
-        <video controls className="h-[600px]" preload="metadata">
-          <source src={COOL_STUFF[0].link} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <iframe
+          src={embedUrl}
+          width="100%"
+          height="600"
+          allow="autoplay"
+          className="rounded-lg"
+        />
       );
     }
     return (
-      <div className="p-2">
-        <Image
-          src={item.link}
-          alt={item.text}
-          width={600}
-          height={600}
-          className="w-full h-auto"
-        />
-      </div>
+      <Image
+        src={item.link}
+        alt={item.text}
+        width={600}
+        height={600}
+        className="w-full h-auto"
+      />
     );
   };
 
@@ -42,9 +45,7 @@ export default function CoolStuffDialog() {
           <DialogContent className="max-w-md">
             <DialogHeader className="items-center">
               <DialogTitle className="text-center"></DialogTitle>
-              <DialogDescription className="text-center">
-                {renderMedia(item)}
-              </DialogDescription>
+              {renderMedia(item)}
             </DialogHeader>
           </DialogContent>
         </Dialog>
