@@ -3,6 +3,7 @@ interface CoolStuffItem {
 	text: string;
 	link: string;
 	type: 'video' | 'image';
+	secondaryText?: string;
   }
 
 export const SKILLS = [
@@ -89,17 +90,20 @@ export const COOL_STUFF: CoolStuffItem[] = [
   {
     text: "I worked as a professional musical for 14 years before moving for technology   🎸",
     link: "https://drive.google.com/file/d/1jMSpwQhfvv5uBaNLLRXkThPQaX31Is4M/view?usp=sharing",
-	type: "video"
+	type: "video",
+	secondaryText: "You know that I'm no good - Amy Winehouse"
   },
   {
     text: "Also worked as a university professor for the musical composition and conducting course",
     link: "/university.jpg",
-	type: "image"
+	type: "image",
+	secondaryText: "Graduation of my students in musical composition"
   },
   {
     text: "Ireland was the most incredible place I have lived in my entire life and I'm looking forward to finding an opportunity to live out the rest of my days there!",
     link: "/ireland.jpg",
-	type: "image"
+	type: "image",
+	secondaryText: "Molly Malone Statue in Dublin"
   }
 ];
 

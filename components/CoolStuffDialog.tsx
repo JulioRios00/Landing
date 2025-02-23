@@ -44,7 +44,7 @@ export default function CoolStuffDialog() {
           </DialogTrigger>
           <DialogContent className="max-w-md">
             <DialogHeader className="items-center">
-              <DialogTitle className="text-center">Cool Stuff</DialogTitle>
+              <DialogTitle className="text-center pt-3 pb-2"> {item.secondaryText}</DialogTitle>
               {renderMedia(item)}
             </DialogHeader>
           </DialogContent>
