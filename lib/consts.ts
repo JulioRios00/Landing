@@ -88,7 +88,7 @@ export const HEADER = {
 
 export const COOL_STUFF: CoolStuffItem[] = [
   {
-    text: "I worked as a professional musical for 14 years before moving for technology   🎸",
+    text: "I worked as a professional musician for 14 years before moving for technology   🎸",
     link: "https://drive.google.com/file/d/1jMSpwQhfvv5uBaNLLRXkThPQaX31Is4M/view?usp=sharing",
 	type: "video",
 	secondaryText: "You know that I'm no good - Amy Winehouse"
