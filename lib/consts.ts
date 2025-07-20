@@ -105,7 +105,7 @@ export const HEADER = {
   name: "Julio Rios",
   title: "Fullstack Developer",
   description:
-    "Full-Stack Developer with 3 years of experience in developing robust and scalable systems, impacting millions of users across various sectors. Proactive and results-oriented, stands out for the ability to deeply understand the products worked on, ensuring technical decisions align with user and stakeholder needs. Combines solid experience in web and backend development with a continuous commitment to improving user experience and solving complex problems. Skilled in collaborating with Machine Learning and Computer Vision teams to build AI-powered solutions that enhance system performance and user experience.",
+    "Full-Stack Developer with 4 years of experience in developing robust and scalable systems, impacting millions of users across various sectors. Proactive and results-oriented, stands out for the ability to deeply understand the products worked on, ensuring technical decisions align with user and stakeholder needs. Combines solid experience in web and backend development with a continuous commitment to improving user experience and solving complex problems. Skilled in collaborating with Machine Learning and Computer Vision teams to build AI-powered solutions that enhance system performance and user experience.",
   imageUrl: {
     light: "/profile.png",
     dark: "/IMG_2940.jpg"
