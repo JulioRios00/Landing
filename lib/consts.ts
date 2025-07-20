@@ -7,15 +7,14 @@ interface CoolStuffItem {
   }
 
 export const SKILLS = [
-  { subject: "FastAPI", A: 85 },
-  { subject: "React/Next.js", A: 75 },
-  { subject: "PostgreSQL", A: 70 },
-  { subject: "Node.js/NestJS", A: 85 },
-  { subject: "TypeScript", A: 80 },
-  { subject: "Python/Django", A: 85 },
-  { subject: "AWS", A: 70 },
-  { subject: "Machine Learning", A: 50 },
-
+  { subject: "FastAPI", proficiency: "Strong", level: 85 },
+  { subject: "React/Next.js", proficiency: "Strong", level: 75 },
+  { subject: "PostgreSQL", proficiency: "Medium", level: 70 },
+  { subject: "Node.js/NestJS", proficiency: "Strong", level: 85 },
+  { subject: "TypeScript", proficiency: "Strong", level: 80 },
+  { subject: "Python/Django", proficiency: "Strong", level: 85 },
+  { subject: "AWS", proficiency: "Medium", level: 70 },
+  { subject: "Machine Learning", proficiency: "Low", level: 50 },
 ];
 
 export const PROJECTS = [
@@ -46,6 +45,14 @@ export const HISTORY = [
     company: "Apollo Solutions Dev",
     description:
       "Collaborates closely with the Machine Learning and Computer Vision teams to develop AI-based solutions for financial systems and traffic event tracking.",
+    detailedDescription: "Full-Stack Software Engineer\nApollo Solutions Dev | May 2024 – Present",
+    details: [
+      "Developed a traffic analysis platform for a university in Los Angeles, processing data on vehicles, pedestrians, and cyclists to assess risks and safety measures.",
+      "Implemented a dynamic and customizable interface for data visualization, working closely with the Machine Learning team.",
+      "Led frontend development for the American loan platform Finanta.io, designing a modern interface serving thousands of users across the United States and Canada.",
+      "Spearheading the migration of the legacy backend system to a new version, improving scalability and performance."
+    ],
+    technologies: ["JavaScript", "Node.js", "React.js", "TypeScript", "PostgreSQL", "Python", "AWS"]
   },
   {
     year: "2021-2024",
@@ -53,13 +60,29 @@ export const HISTORY = [
     company: "Loggi",
     description:
       "Redesigned the package tracking system, creating an efficient and scalable event-driven architecture.",
+    detailedDescription: "Full-Stack Software Engineer\nLoggi | August 2021 – March 2024",
+    details: [
+      "Redesigned the package tracking system using an event-driven architecture, enhancing scalability and reliability.",
+      "Optimized PostgreSQL queries, reducing redundant requests and improving database performance by 30%.",
+      "Modernized the user interface, increasing user satisfaction by 20%.",
+      "Promoted to Software Engineer from a pool of nearly 3,000 internal candidates, recognized for technical impact and problem-solving skills."
+    ],
+    technologies: ["JavaScript", "Node.js", "React.js", "Python", "Django", "FastAPI", "PostgreSQL", "AWS", "Agile methodologies (Kanban, SCRUM)"]
   },
   {
-    year: "2018-2019",
+    year: "2020-2021",
     position: "Technology and Development Intern",
     company: "Intersect NFT",
     description:
       "Assisted in the development of a web-based learning platform using React and Node.js.",
+    detailedDescription: "Full-Stack Software Engineer\nIntersect NFT | January 2020 – August 2021",
+    details: [
+      "Developed and maintained an NFT marketplace for the U.S. market, enhancing accessibility and user experience.",
+      "Implemented accessibility features, enabling visually impaired users to navigate the platform efficiently.",
+      "Updated the user interface to reduce the number of clicks required for purchases, increasing monthly sales by 9.7%.",
+      "Expanded the platform to support multiple cryptocurrencies and initiated a direct trading system."
+    ],
+    technologies: ["Node.js", "Prisma", "PostgreSQL", "Next.js", "AWS", "ArgoCD"]
   },
 ];
 
@@ -83,7 +106,10 @@ export const HEADER = {
   title: "Fullstack Developer",
   description:
     "Full-Stack Developer with 3 years of experience in developing robust and scalable systems, impacting millions of users across various sectors. Proactive and results-oriented, stands out for the ability to deeply understand the products worked on, ensuring technical decisions align with user and stakeholder needs. Combines solid experience in web and backend development with a continuous commitment to improving user experience and solving complex problems. Skilled in collaborating with Machine Learning and Computer Vision teams to build AI-powered solutions that enhance system performance and user experience.",
-  imageUrl: "/IMG_2940.jpg",
+  imageUrl: {
+    light: "/profile.png",
+    dark: "/IMG_2940.jpg"
+  },
 };
 
 export const COOL_STUFF: CoolStuffItem[] = [
